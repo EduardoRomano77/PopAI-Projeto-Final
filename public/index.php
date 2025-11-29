@@ -1,17 +1,10 @@
-<?php
-require '../vendor/autoload.php';
+<?php require_once "data/session_init.php"; ?>
+<link rel="stylesheet" href="css/style.css">
 
-use Application\Hello;
-?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <link href="/css/default.css" rel="stylesheet" />
-    <title>Document</title>
-</head>
-<body>
-    <h1>PHP & Mysql</h1>
-    <p><?= Hello::message() ?></p>
-</body>
-</html>
+<?php include "menu.php"; ?>
+
+<div class="container">
+    <h1>Dashboard</h1>
+    <p>Bem-vindo ao PoupAI!</p>
+    <p>Use o menu lateral para acessar o CRUD de metas financeiras.</p>
+</div>
